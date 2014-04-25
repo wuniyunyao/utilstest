@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="120" height="20" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Ground00" tilewidth="32" tileheight="32" spacing="1" margin="1">
+  <image source="../../ParkourCPP/Resources/ipad/Ground00.png" width="3072" height="176"/>
+ </tileset>
+ <tileset firstgid="466" name="Map01" tilewidth="32" tileheight="32" spacing="1" margin="1">
+  <image source="../../ParkourCPP/Resources/ipad/Map01.png" width="3072" height="768"/>
+ </tileset>
+ <layer name="块层 2" width="120" height="20">
+  <data encoding="base64" compression="zlib">
+   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
+  </data>
+ </layer>
+ <layer name="块层 1" width="120" height="20">
+  <data encoding="base64" compression="zlib">
+   eJzt1MEJADAMA7F0/6U7g/uqgwSe4MAzAAAAAAAAAJkTjv+lTXXtoOEuWvZ6+Vjr2QWkMwCh
+  </data>
+ </layer>
+ <objectgroup name="Physics" width="120" height="20">
+  <object x="288" y="577" width="224" height="31"/>
+  <object x="416" y="545" width="255" height="31"/>
+  <object x="481" y="511" width="415" height="31"/>
+  <object x="577" y="478" width="383" height="34"/>
+  <object x="0" y="607">
+   <polyline points="0,0 3070,2 3836,-5"/>
+  </object>
+  <object x="606" y="399" width="78" height="78">
+   <ellipse/>
+  </object>
+  <object x="684" y="419">
+   <polyline points="0,0 70,60 176,-30"/>
+  </object>
+  <object x="209" y="595">
+   <polygon points="0,0 147,-52 -26,-97 -90,-60"/>
+  </object>
+  <object x="362" y="470" width="147" height="45">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>
