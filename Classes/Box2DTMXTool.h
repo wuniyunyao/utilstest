@@ -13,13 +13,19 @@ using namespace cocos2d;
 */
 class Box2DTMXTool{
 public:
-	//bool readPhysicalMap(b2World *b2world,CCTMXTiledMap *tiledmap);
-	//bool setTiledMap(CCTMXTiledMap* tiledMap);
-	//CCTMXTiledMap* getTiledMap();
+	Box2DTMXTool();
 	bool readTiledMapForBlocks(b2World* world,CCTMXTiledMap *tiledmap);
+	bool readTiledMapForBlocks(b2World* world,CCTMXTiledMap *tiledmap,float xOffset);
+	void destoryAllBlocks();
 	std::vector<StaticBlockObject*> mStaticBlockList;
 private:
 	CCTMXTiledMap* mTiledMap;
 	b2Body* mBody;	
+	float contentScaleFactor;
+	float offset;
+	b2World* mWorld;
+	CC_SYNTHESIZE(int, bodyListLength,BodyListLength);
+	std::list<b2Body*> mBodyList;
+	bool autorelease();
 };
 #endif //__BOX2DTMXTOOL_H_

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="120" height="20" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="Ground00" tilewidth="32" tileheight="32" spacing="1" margin="1">
-  <image source="../../ParkourCPP/Resources/ipad/Ground00.png" width="3072" height="176"/>
+  <image source="Ground00.png" width="3072" height="176"/>
  </tileset>
  <tileset firstgid="466" name="Map01" tilewidth="32" tileheight="32" spacing="1" margin="1">
-  <image source="../../ParkourCPP/Resources/ipad/Map01.png" width="3072" height="768"/>
+  <image source="Map01.png" width="3072" height="768"/>
  </tileset>
  <layer name="块层 2" width="120" height="20">
   <data encoding="base64" compression="zlib">
