@@ -48,9 +48,9 @@ bool Box2DTMXTool::readTiledMapForBlocks(b2World* world,CCTMXTiledMap* tiledmap,
             std::vector<b2Vec2> points;
             
             // 必须将所有读取的定点逆向，因为翻转y之后，三角形定点的顺序已经逆序了，构造b2PolygonShape会crash
-            int c =polygon_points->count();
-            points.resize(c);
-            c--;
+            //int c =polygon_points->count();
+            //points.resize(c);
+            //c--;
             
             CCDictionary* pt_dict;
             CCObject* obj = NULL;
@@ -66,7 +66,8 @@ bool Box2DTMXTool::readTiledMapForBlocks(b2World* world,CCTMXTiledMap* tiledmap,
                 float offx = ((CCString*)pt_dict->objectForKey("x"))->floatValue()/contentScaleFactor;
                 float offy = ((CCString*)pt_dict->objectForKey("y"))->floatValue()/contentScaleFactor;
                 
-                points[c--] = (b2Vec2((x + offx) / PTM_RATIO, (y-offy) / PTM_RATIO));
+                //points[c--] = (b2Vec2((x + offx) / PTM_RATIO, (y-offy) / PTM_RATIO));
+				points.push_back(b2Vec2((x + offx) / PTM_RATIO, (y-offy) / PTM_RATIO));
             }
             
             b2PolygonShape *ps = new b2PolygonShape();

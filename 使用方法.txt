@@ -1,0 +1,1 @@
+将本文件夹下的CCTMXXMLParser.cpp覆盖到..\..\cocos2dx\tileMap_parallax_nodes\CCTMXXMLParser.cpp
