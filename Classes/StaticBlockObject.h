@@ -10,14 +10,22 @@ using namespace cocos2d;
 创建者：无逆云遥
 创建日期：2013/4/24
 */
-struct StaticBlockObject : public b2FixtureDef{
+class StaticBlockObject{
 public:
 	enum type
 	{
-		ST_POLYGON,
+		ST_POLYGON = 0,
 		ST_CIRCLE
 	};
-	type shape;	
-	b2Fixture *fixture;
+	type shape;
+	b2Fixture* fixture;
+	float32 friction;
+    float32 restitution;
+    float32 density;
+	StaticBlockObject(){
+		density = 1.0f;
+		friction = 0;
+		restitution = 0;
+	};
 };
 #endif //__STATICBLOCKOBJECT_H_

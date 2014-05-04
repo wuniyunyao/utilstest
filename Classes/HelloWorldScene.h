@@ -2,7 +2,7 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
-#include "Box2DTMXTool.h"
+#include "Box2DTiledMapManager.h"
 #include "Box2D\Box2D.h"
 #include "GLES-Render.h"
 class HelloWorld : public cocos2d::CCLayer
@@ -21,7 +21,7 @@ public:
     // implement the "static node()" method manually
     CREATE_FUNC(HelloWorld);
 	
-	Box2DTMXTool tool;
+	Box2DTiledMapManager tool;
 
 	b2World* mWorld;
 	virtual void update(float dt);

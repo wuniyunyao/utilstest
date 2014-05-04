@@ -132,7 +132,8 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
-    <ClCompile Include="..\Classes\Box2DTMXTool.cpp" />
+    <ClCompile Include="..\Classes\Box2DTiledMapManager.cpp" />
+    <ClCompile Include="..\Classes\Box2DTMXReader.cpp" />
     <ClCompile Include="..\Classes\GLES-Render.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="main.cpp" />
@@ -141,7 +142,8 @@ xcopy /Y /Q "$(ProjectDir)..\..\..\external\libwebsockets\win32\lib\*.*" "$(OutD
     <ClInclude Include="..\..\Utils\Utils\StaticBlockObject.h" />
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\AppMacros.h" />
-    <ClInclude Include="..\Classes\Box2DTMXTool.h" />
+    <ClInclude Include="..\Classes\Box2DTiledMapManager.h" />
+    <ClInclude Include="..\Classes\Box2DTMXReader.h" />
     <ClInclude Include="..\Classes\GLES-Render.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
     <ClInclude Include="..\Classes\StaticBlockObject.h" />
